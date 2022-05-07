@@ -15,7 +15,7 @@ data class CsvReflectionCreator<T>(
     private val ignoreCaseTokenId: String = UUID.randomUUID().toString()
 
     init {
-        fieldTranslation = target.declaredFields.map { createFieldMapping(it) }.toMap()
+        fieldTranslation = target.declaredFields.map { createFieldMapping(it) }.toMap().filter { !it.key.startsWith("__\$") && !it.key.endsWith("\$__") }
     }
 
     private fun createFieldMapping(field: Field): Pair<String, InstantiationField> {
