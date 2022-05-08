@@ -7,16 +7,16 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint")
     id("org.jlleitschuh.gradle.ktlint-idea")
 
-    id("com.github.kt3k.coveralls")
+//    id("com.github.kt3k.coveralls")
 
-    id("io.github.gradle-nexus.publish-plugin")
+//    id("io.github.gradle-nexus.publish-plugin")
 
     kotlin("jvm")
 }
 
 allprojects {
     apply(plugin = "kotlin")
-    apply(plugin = "jacoco")
+//    apply(plugin = "jacoco")
 
     group = "io.github.pelletier197"
 
@@ -45,7 +45,7 @@ allprojects {
         finalizedBy("jacocoTestReport")
     }
 }
-
+/*
 configure<io.github.gradlenexus.publishplugin.NexusPublishExtension> {
     repositories {
         sonatype {
@@ -87,3 +87,5 @@ coveralls {
 tasks.coveralls {
     dependsOn("jacocoRootReport")
 }
+
+ */
