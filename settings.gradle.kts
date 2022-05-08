@@ -1,7 +1,7 @@
 rootProject.name = "kotlin-stream-csv"
 include("core")
 //include("core-java-tests")
-include("examples")
+//include("examples")
 
 pluginManagement {
     val kotlinVersion: String by settings
