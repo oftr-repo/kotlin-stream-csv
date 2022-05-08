@@ -4,8 +4,8 @@ import java.net.URI
 plugins {
     id("org.jlleitschuh.gradle.ktlint")
 
-    id("maven-publish")
-    id("signing")
+//    id("maven-publish")
+//    id("signing")
 }
 
 dependencies {
@@ -24,7 +24,7 @@ java {
     withJavadocJar()
     withSourcesJar()
 }
-
+/*
 configure<PublishingExtension> {
     publications {
         create<MavenPublication>("mavenJava") {
@@ -73,10 +73,13 @@ configure<PublishingExtension> {
         }
     }
 }
+*/
 
+/*
 configure<SigningExtension> {
     val signingKey = System.getenv("SIGNING_KEY")
     val signingPassword = System.getenv("SIGNING_PASSWORD")
     useInMemoryPgpKeys(signingKey, signingPassword)
     sign(publishing.publications)
 }
+*/
