@@ -4,7 +4,7 @@ import java.net.URI
 plugins {
     id("org.jlleitschuh.gradle.ktlint")
 
-//    id("maven-publish")
+    id("maven-publish")
 //    id("signing")
 }
 
