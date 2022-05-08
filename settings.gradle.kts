@@ -1,6 +1,6 @@
 rootProject.name = "kotlin-stream-csv"
 include("core")
-include("core-java-tests")
+//include("core-java-tests")
 include("examples")
 
 pluginManagement {
